@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Billie Eilish</title>
+		<meta charset="utf-8">
+		<script src="JS/one_page_website.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="CSS/one_page_website.css"/>
+	</head>
+	<body>
+		
+		<!-- NAV -->
+		<div>
+			<div>
+				<ul>
+					<a href="#home" id="link"><li>HOME</li><a/>
+					<a href="#discography"><li>DISCOGRAPHY</li></a>
+					<a href="#music video"><li>MUSIC VIDEO</li></a>
+					<a href="#contact"><li>EMAIL LIST</li></a>
+				</ul>
+			</div>
+		</div>
+		<!-- END NAV-->
+		
+		<!-- HOME -->
+		<div id="home">
+			<div>
+				<div>
+					<h1>Billie Eilish</h1>
+				</div>
+			</div>
+		</div>
+		<!-- END HOME -->
+		
+		<!-- DISCOGRAPHY -->
+		<section>
+			<div id="discography">
+				<h2>Discography</h2>
+
+				<!-- Images used to open the lightbox -->
+				<div class="row">
+					<div class="column">
+						<img src="images/billie/billie_1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+					</div>
+					<div class="column">
+						<img src="images/billie/billie_2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+					</div>
+					
+				</div>
+				
+				<!-- The Modal/Lightbox -->
+				<div id="myModal" class="modal">
+					<span class="close cursor" onclick="closeModal()">&times;</span>
+					<div class="modal-content">
+				
+					<div class="mySlides">
+						<div class="numbertext">1 / 2</div>
+						<img src="images/billie/billie_1.jpg" style="width:100%">
+					</div>
+				
+					<div class="mySlides">
+						<div class="numbertext">2 / 2</div>
+						<img src="images/billie/billie_2.jpg" style="width:100%">
+					</div>
+				
+				
+					<!-- Next/previous controls -->
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				
+					<!-- Caption text -->
+					<div class="caption-container">
+						<p id="caption"></p>
+					</div>
+				
+					<!-- Thumbnail image controls -->
+					<div class="column">
+						<img class="demo" src="images/billie/billie_1.jpg" onclick="currentSlide(1)" alt="don't smile at me">
+					</div>
+				
+					<div class="column">
+						<img class="demo" src="images/billie/billie_2.jpg" onclick="currentSlide(2)" alt="WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?">
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<!-- END DISCOGRAPHY -->
+
+		<!-- MUSIC VIDEO -->
+		<section>
+			<div id="music video">
+			<h2>Music Video</h2>
+				<div>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/viimfQi_pUw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+		</section>
+		<!-- END MUSIC VIDEO -->
+		
+		<!-- EMAIL LIST -->
+		<section>
+			<div id="contact">
+				<div>
+					<h2>Email List</h2>
+					<div>
+						<h3>Want updates on her latest music?</h3>
+						<p>
+							Please provide us with your basic contact information.
+						</p>
+						<div>
+							<form action="" method="post">
+								<input class="email list" type="text" value="First Name">
+								<input class="email list" type="text" value="Last Name">
+								<input class="email list" type="text" value="Email Address">
+								<div class="form-spacers">
+									<label class="terms">Terms and Conditions</label>
+								</div>
+								<div>
+									<input type="submit" value="Submit">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END EMAIL LIST -->
+		
+		<!-- FOOTER -->
+		<div>
+			Jennie Campos &copy; 2020
+		</div>
+		<!-- END FOOTER -->
+		
+	</body>
+</html>
+	</body>
+</html>
